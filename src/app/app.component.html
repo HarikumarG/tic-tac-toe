@@ -1,20 +1,47 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<html>
 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="container h-100">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-* justify-content-center">
+        <div class="game">
+          <h1>Tic-Tac-Toe</h1><br>
+          <div id=board class="border border-white">
+            <div class="square" (click)="onclick('bt1')">{{bt1}}</div>
+            <div class="square" (click)="onclick('bt2')">{{bt2}}</div>
+            <div class="square" (click)="onclick('bt3')">{{bt3}}</div>
+            <div class="square" (click)="onclick('bt4')">{{bt4}}</div>
+            <div class="square" (click)="onclick('bt5')">{{bt5}}</div>
+            <div class="square" (click)="onclick('bt6')">{{bt6}}</div>
+            <div class="square" (click)="onclick('bt7')">{{bt7}}</div>
+            <div class="square" (click)="onclick('bt8')">{{bt8}}</div>
+            <div class="square" (click)="onclick('bt9')">{{bt9}}</div>
+          </div>
+          <br>
+          <h2>{{status}}</h2>
+          <audio id="clickAudio" muted="muted">
+            <source src="../assets/jump.mp3" type="audio/mpeg">
+          </audio>
+          <audio id="gameoverAudio" muted="muted">
+            <source src="../assets/mario_game_over.mp3" type="audio/mpeg">
+          </audio>
+          <audio id="winAudio" muted="muted">
+            <source src="../assets/mario_winner.mp3" type="audio/mpeg">
+          </audio>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
