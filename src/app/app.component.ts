@@ -13,7 +13,7 @@ export class AppComponent implements AfterViewInit {
     this.y = <HTMLAudioElement>document.getElementById("gameoverAudio");
     this.z = <HTMLAudioElement>document.getElementById("winAudio");
     var audio = new Audio('../assets/super_mario.mp3');
-    audio.play();
+    audio.autoplay = true;
   }
   m: any;
   x: any;
