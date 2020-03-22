@@ -1,6 +1,6 @@
 # TicTacToe
 
-The working model is in heroku server in which the link is given below.
+The working model is in heroku server in which the link is given.
 https://tic-tac-toe-new.herokuapp.com/
 
 ## Development server
